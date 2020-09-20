@@ -11,9 +11,10 @@ http://0.0.0.0:5000/
 # To check the mentioned httpstat service metrics
 
 Exec into the pod:
-==> kubectl exec -it <POD_NAME> -n prometheus-metrics-vmware bash
-==> curl localhost:5000/metrics
 
+`kubectl exec -it <POD_NAME> -n prometheus-metrics-vmware bash`
+
+`curl localhost:5000/metrics`
 
 
 ## APIs
