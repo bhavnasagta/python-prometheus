@@ -15,3 +15,13 @@ helm install stable/prometheus --name prometheus --namespace monitoring -f prome
 
 kubectl apply -f nginx-expose.yaml
 
+########################################################################
+GRAFANA SERVER
+########################################################################
+
+Install Grafana by helm chart just like prometheus above step.
+
+Configure data source of prometheus server DNS in Grafana and create Graphs accordingly.
+
+Create grafana DNS entry.
+
