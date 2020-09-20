@@ -1,0 +1,17 @@
+
+#######################################################################
+Create monitoring namespace
+#######################################################################
+
+kubectl apply -f namespace.yaml
+
+########################################################################
+PROMETHEUS SERVER
+########################################################################
+
+helm install stable/prometheus --name prometheus --namespace monitoring -f prometheus-values.yaml
+
+# change DNS entry before hand
+
+kubectl apply -f nginx-expose.yaml
+
