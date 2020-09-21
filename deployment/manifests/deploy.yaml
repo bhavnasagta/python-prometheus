@@ -19,6 +19,9 @@ spec:
       version: v1
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "5000"
       labels:
         service: prometheus-metrics-vmware
         version: v1
