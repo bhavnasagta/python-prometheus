@@ -25,6 +25,7 @@ spec:
       labels:
         service: prometheus-metrics-vmware
         version: v1
+        service-prometheus-track: prometheus-metrics-vmware
     spec:
       containers:
       - name: prometheus-metrics-vmware
